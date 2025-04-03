@@ -17,3 +17,5 @@ function PoKemonCard({ pokemon }: CardPropsI) {
 }
 
 export default PoKemonCard;
+
+//quete react 5
