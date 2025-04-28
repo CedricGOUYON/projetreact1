@@ -1,15 +1,13 @@
-const pokemonList = [
-  {
-    name: "bulbasaur",
-    imgSrc: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-  },
-  {
-    name: "mew",
-  },
-];
+interface PokemonI {
+  name: string;
+  imgSrc?: string;
+}
 
-function PoKemonCard() {
-  const pokemon = pokemonList[1];
+interface CardPropsI {
+  pokemon: PokemonI;
+}
+
+function PoKemonCard({ pokemon }: CardPropsI) {
   return (
     <figure>
       {pokemon.imgSrc ? <img src={pokemon.imgSrc} alt={pokemon.name} /> : <p>???</p>}
@@ -19,3 +17,5 @@ function PoKemonCard() {
 }
 
 export default PoKemonCard;
+
+//quete react 5
