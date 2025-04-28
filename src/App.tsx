@@ -12,9 +12,10 @@ function App() {
   }
 
   return (
-    <section>
-      <PokemonCard />
-    </section>
+    <div>
+      <NavBar setPokemonName={setPokemonName} pokemonList={pokemonList} />
+      <PokemonCard pokemon={pokemon} />
+    </div>
   );
 }
 export default App;
